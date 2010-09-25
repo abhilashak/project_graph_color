@@ -1,0 +1,12 @@
+application: sec
+version: 1
+runtime: python
+api_version: 1
+
+handlers: 
+- url: /canvas
+  static_dir: jv
+
+- url: /.*
+  script: sec.py 
+
